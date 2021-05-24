@@ -1,7 +1,11 @@
 # ------------------------------------------------------------ Imports ----------------------------------------------------------- #
 
+# System
+from typing import Optional
+
 # Pip
 from web3 import eth as Eth
+from eth_account.signers.local import LocalAccount
 
 # Local
 from ...core import PredefinedERC20, PredefinedERC20Constants
@@ -18,7 +22,8 @@ class Busd(PredefinedERC20):
 
     def __init__(
         self,
-        eth: Eth
+        eth: Eth,
+        account: Optional[LocalAccount] = None
     ):
         super().__init__(
             eth=eth,
@@ -27,7 +32,8 @@ class Busd(PredefinedERC20):
                 name     = 'BUSD Token',
                 symbol   = 'BUSD',
                 decimals = 18
-            )
+            ),
+            account=account
         )
 
 
