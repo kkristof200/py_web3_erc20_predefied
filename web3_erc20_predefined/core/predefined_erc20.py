@@ -4,7 +4,7 @@
 from typing import Optional
 
 # Pip
-from web3 import eth as Eth
+from web3.eth import Eth
 from eth_account.signers.local import LocalAccount
 
 from web3_erc20 import ERC20

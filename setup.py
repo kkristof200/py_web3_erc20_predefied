@@ -10,7 +10,7 @@ else:
 
 setuptools.setup(
     name='web3_erc20_predefined',
-    version='0.0.2',
+    version='0.0.3',
     author='Kristóf-Attila Kovács',
     description='web3_erc20_predefined',
     long_description=long_description,
@@ -20,7 +20,7 @@ setuptools.setup(
     install_requires=[
         'eth-account>=0.5.4',
         'web3>=5.18.0',
-        'web3-erc20>=0.0.2'
+        'web3-erc20>=0.0.3'
     ],
     classifiers=[
         'Programming Language :: Python :: 3.4',
